@@ -145,9 +145,9 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var multiply1 = multiply(dynamicArray[0],dynamicArray[1])[0];
     var multiply2 = multiply (multiply1,dynamicArray[2])[0];
     var multiply3 = multiply (multiply2,dynamicArray[3])[0];
-    var multiply4 = multiply (multiply3,dynamicArray[4])[0];
+    var multiply44 = multiply (multiply3,dynamicArray[4])[0];
 var result = [];
-result.push(multiply4);
+result.push(multiply44);
 result.push("The numbers 1,2,3,4,5 have a product of 120.");
 return result;
 }
