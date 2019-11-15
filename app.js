@@ -49,13 +49,6 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-//     var summing= sum(a,b);
-//     var summing2= sum(summing[0],c)
-//      var multiplying =multiply(a,b);
-//      var multiplying2=multiply(multiplying[0],c)
-     
-//   return [summing2[0], multiplying2[0] ,a + " and " + b + " and " + c + " sum to " + summing2[0] +".", "The product of " + a + " and " + b + " and " + c + " is " + multiplying2[0] + "."]; 
-  
 var sum1= sum(a,b);
 var sum2= sum(sum1[0],c);
 var multiply1 =multiply(a,b);
@@ -88,11 +81,18 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
-}
-
+var sum1 = sum(sumArr[0],sumArr[1])[0];
+var sum2 = sum(sum1,sumArr[2])[0];
+var result = [];
+result.push (sum2);
+result.push ("2,3,4 was passed in as an array of numbers, and 9 is their sum.");
+return result;
+ }
+ 
+ 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
